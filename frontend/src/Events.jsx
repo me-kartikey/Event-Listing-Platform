@@ -20,7 +20,7 @@ function Events() {
       return;
     }
 
-    await axios.post("https://event-listing-platform-backend-1lpy.onrender.com/api/events", {
+    await axios.post("https://event-listing-platform-backend-1lpy.onrender.com/api/leads", {
       email,
       consent,
       eventId: selectedEvent._id,
