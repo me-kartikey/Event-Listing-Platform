@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Event card */
+.event-card {
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.ticket-btn {
+  margin-top: 10px;
+  background: #111827;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ticket-btn:hover {
+  background: #000;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal card */
+.modal-card {
+  background: white;
+  padding: 24px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-card h2 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.modal-card input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.checkbox {
+  font-size: 14px;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+/* Buttons */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel {
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.continue {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.continue:hover {
+  background: #1e40af;
+}
