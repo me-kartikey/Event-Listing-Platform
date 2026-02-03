@@ -9,7 +9,7 @@ function Events() {
   const [consent, setConsent] = useState(false);
 
   useEffect(() => {
-    axios.get("https://event-listing-platform-backend-1lpy.onrender.com").then((res) => {
+    axios.get("https://event-listing-platform-backend-1lpy.onrender.com/api/events").then((res) => {
       setEvents(res.data);
     });
   }, []);
@@ -20,7 +20,7 @@ function Events() {
       return;
     }
 
-    await axios.post("https://event-listing-platform-backend-1lpy.onrender.com", {
+    await axios.post("https://event-listing-platform-backend-1lpy.onrender.com/api/events", {
       email,
       consent,
       eventId: selectedEvent._id,
